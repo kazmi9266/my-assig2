@@ -32,14 +32,15 @@ jobs:
 
        cmd: install
        
+    - name: Creating surge
+      run: yarn build  
        
-       -name: installing surge
-       run: npm install -g surge   
-       
-        
+    - name: installing surge
+     
+      run: npm install -g surge   
     - name: deploy Surge 
       run: Surge ./ build http://zeeshan2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
-       
+         
        
         
          
