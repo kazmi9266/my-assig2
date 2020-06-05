@@ -38,7 +38,7 @@ jobs:
        
       id: Deploying Surge  
     - name: Surge 
-      run: Surge ./ build http://alibaba22.surge.sh/ ${{secrets.}}
+      run: Surge ./ build http://alibaba22.surge.sh/ ${{secrets.SURGE_TOKEN}}
        
        
         
