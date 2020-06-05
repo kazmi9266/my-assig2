@@ -36,8 +36,8 @@ jobs:
        -name: installing surge
        run: npm install -g surge   
        
-      id: Deploying Surge  
-    - name: Surge 
+        
+    - name: deploy Surge 
       run: Surge ./ build http://alibaba22.surge.sh/ ${{secrets.SURGE_TOKEN}}
        
        
