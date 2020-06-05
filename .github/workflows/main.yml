@@ -38,7 +38,7 @@ jobs:
        
         
     - name: deploy Surge 
-      run: Surge ./ build http://alibaba22.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: Surge ./ build http://bootcamp9266.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
        
        
         
